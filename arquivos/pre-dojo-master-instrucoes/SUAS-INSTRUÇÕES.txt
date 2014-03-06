@@ -1,0 +1,54 @@
+1 - Para executar basta passar como parametro o caminho absoluto e o nome do arquivo
+
+Exemplo para executar a classe main
+java br.com.dojo.util.DashBoard /home/afng/workspace-pre-dojo-master/arquivos/logs/test/log.txt
+
+Ambiente de desenvolvimento
+
+SO: Ubuntu 12.04 LTS
+Java 1.7.0_51
+Eclipse Version: Kepler Service Release 1 Build id: 20130919-0819
+
+Considerações
+
+2 - Layout do arquivo de log
+
+Para teste utilizar o exemplo do layout abaixo:
+
+Primeira linha identifica o cabeçalho do jogo
+23/04/2013 15:34:22 - New match 11348965 has started
+
+Linhas intermediarias sao as acoes executado no jogo
+23/04/2013 15:36:04 - Roman killed Nick using M16
+23/04/2013 15:36:33 - <WORLD> killed Nick by DROWN
+
+Ultima linha identifica o rodape do jogo
+23/04/2013 15:39:22 - Match 11348965 has ended
+
+No arquivo de log podem existir varios logs dos combates, neste caso sera solitado para passar o identificador da luta no jogo, no exemplo acima sera o 11348965
+
+Caso o arquivo de log nao esteja no padrao acima o programa nao sera executado conforme esperado
+
+3 - Como se trata de log levei em consideracao o layout em perfeito, estado ou seja, nao tem tratamento e validacao do mesmo
+
+4 - Desenvolvimento
+
+Nao foi utilizado framework, basta compilar em uma versao do java 5 ou superior e executar
+
+Foram adicionados comentarios em javadoc e simples nas principais classes
+
+Diretorio com os fontes
+/src
+
+Diretorio com os fontes de teste
+/test
+
+Arquivos que foram utilizados para teste
+/arquivos/logs/test
+
+5 - Teste
+
+Fiz alguns testes utilizando JUnit, os nomes das classes e os nomes dos metodos identificam as suas finalidades
+
+Arquivos que foram utilizados nos testes
+/arquivos/logs/test
